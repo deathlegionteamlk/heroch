@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heroch"
+version = "0.1.0"
+authors = [
+  { name="Death Legion Team", email="contact@deathlegion.team" },
+]
+description = "A flexible deep learning library for machine learning and scientific computing with GPU acceleration."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Science/Research",
+    "Development Status :: 3 - Alpha",
+]
+keywords = ["machine learning", "deep learning", "tensors", "autograd", "neural networks", "GPU acceleration", "CUDA", "scientific computing", "artificial intelligence", "AI", "matrix operations", "gradient descent", "numerical computing", "pythonic", "flexible ml"]
+dependencies = [
+    "numpy>=1.20.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/death-legion-team/heroch"
+"Bug Tracker" = "https://github.com/death-legion-team/heroch/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["heroch*"]
